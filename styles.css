@@ -1,0 +1,27 @@
+div {
+    background-color: #285dcd;
+    border-radius: 10px;
+    height: 150px;
+    width: 250px;
+}
+
+div .information-wrapper {
+    height: 30px;
+    width: 148px;
+}
+
+.credit-card-back .information-wrapper {
+    background-color: #c4c4c4;
+}
+
+.magnetic-strip {
+    background-color: black;
+    height: 30px;
+}
+
+.credit-card-front .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
