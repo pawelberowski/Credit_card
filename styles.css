@@ -1,27 +1,65 @@
-div {
-    background-color: #285dcd;
-    border-radius: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto&display=swap');
+
+.credit-card {
     height: 150px;
     width: 250px;
+    border-radius: 10px;
+    background-color: #285dcd;
 }
 
-div .information-wrapper {
-    height: 30px;
-    width: 148px;
-}
-
-.credit-card-back .information-wrapper {
-    background-color: #c4c4c4;
-}
-
-.magnetic-strip {
-    background-color: black;
-    height: 30px;
+.credit-card-front {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .credit-card-front .number {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 25px;
+    background-color: #c4c4c4;
+
 }
+
+.credit-card-back {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.credit-card-back .information-wrapper {
+    /*flex-wrap: wrap;*/
+    margin-top: 14px;
+    margin-left: 8px;
+    height: 30px;
+    width: 148px;
+    background-color: #c4c4c4;
+}
+
+.credit-card-back .information-wrapper .name {
+    margin-top: 5px;
+    margin-left: 10px;
+    flex-direction: row;
+    order: 0;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+.credit-card-back .information-wrapper .number {
+    flex-direction: row;
+    align-items: flex-end;
+    order: 1;
+    margin: 0;
+}
+
+.magnetic-strip {
+    margin-top: 15px;
+    background-color: black;
+    height: 30px;
+}
+
+
 
