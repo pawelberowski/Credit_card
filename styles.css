@@ -78,6 +78,7 @@
 .credit-card-back .information-wrapper .number {
     flex-direction: row;
     align-items: flex-end;
+    font-style: italic;
 
     order: 1;
     margin: 0;
